@@ -3,17 +3,20 @@
 node_modules/
 **/node_modules/
 
-# Environment files
-backend/.env
-backend/.env.*
-backend/!.env.example
-backend/!.env.sample
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
 
 # Build output
-frontend/dist/
-frontend/build/
+dist/
+build/
+coverage/
 
-# Local editor and OS files
-.vscode/
+# Logs
+*.log
+npm-debug.log*
+
+# Operating system files
 .DS_Store
 Thumbs.db
